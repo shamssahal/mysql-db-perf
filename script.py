@@ -29,12 +29,6 @@ def main():
     except Exception as e:
         print("Error reading CSV files:", e)
         return
-
-    # Debug: print head of dataframes to ensure data is loaded.
-    print("Dump Create Data:")
-    print(df_dump.head(), "\n")
-    print("DB Perf Data:")
-    print(df_perf.head(), "\n")
     
     # Combine ddi_t and ss_t from both files.
     combined_ddi = pd.concat([df_dump["ddi_t"], df_perf["ddi_t"]])
