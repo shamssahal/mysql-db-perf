@@ -1,8 +1,0 @@
-docker build -t mysql:v1 .
-
-
-docker run -d --name mysql-local \
-  --memory="1g" \
-  --cpus="0.5" \
-  -e MYSQL_ROOT_PASSWORD=coderunnerhackerrank \
-  mysql:v1

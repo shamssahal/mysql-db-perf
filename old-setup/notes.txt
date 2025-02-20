@@ -1,0 +1,21 @@
+docker build -t mysql:v1 .
+
+
+docker run -d --name mysql-local \
+  --memory="1g" \
+  --cpus="0.5" \
+  -e MYSQL_ROOT_PASSWORD=coderunnerhackerrank \
+  mysql:v1
+
+
+
+docker run --rm --init --name mysql-startup \
+  --cpuset-cpus="0" \
+  --cpus="0.1" \
+  --cpu-shares=1024 \
+  --memory="1g" \
+  --memory-swap="1g" \
+  --network=none \
+  --tmpfs /var/lib/mysql:rw,size=500m \
+  -e MYSQL_ROOT_PASSWORD=coderunnerhackerrank \
+  mysql:v4 2>&1 | tee startup.log

@@ -1,7 +1,7 @@
 FROM mysql:8.0
 
-ENV MSSQL_PID Express
-ENV MYSQL_ROOT_PASSWORD coderunnerhackerrank
+ENV MSSQL_PID=Express
+ENV MYSQL_ROOT_PASSWORD=coderunnerhackerrank
 
 USER root
 RUN groupadd -g 2000 coderunner \
@@ -16,7 +16,11 @@ COPY my.cnf /etc/mysql/my.cnf
 COPY measure_startup.sh /usr/local/bin/measure_startup.sh
 RUN chmod +x /usr/local/bin/measure_startup.sh
 
-# Use the shell script as the container's entrypoint
+# Copy the SQL dump file into /tmp and set its permissions
+COPY dump.sql /tmp/dump.sql
+RUN chmod 644 /tmp/dump.sql
+
+# Use the startup script as the container's entrypoint
 ENTRYPOINT ["/usr/local/bin/measure_startup.sh"]
 
 USER coderunner
