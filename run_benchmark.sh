@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-NUM_RUNS=100
+NUM_RUNS=1
 DUMP_CSV="dump_create_results.csv"
 DBPERF_CSV="db_perf_results.csv"
 
@@ -18,7 +18,7 @@ extract_time() {
 for run in $(seq 1 $NUM_RUNS); do
     echo "===== Run $run: Dump Creation Workflow ====="
     rm -f dump_create.log
-    docker run --rm -v "$(pwd)":/shared --name mysql-dump-create \
+    sudo docker run --rm -v "$(pwd)":/shared --name mysql-dump-create \
       -e MYSQL_ROOT_PASSWORD=coderunnerhackerrank \
       --memory="4g" --cpus="1" \
       mysql:v5 /usr/local/bin/measure_dump_create.sh 2>&1 | tee dump_create.log
@@ -31,7 +31,7 @@ for run in $(seq 1 $NUM_RUNS); do
 
     echo "===== Run $run: DB Performance Workflow ====="
     rm -f db_perf.log
-    docker run --rm -v "$(pwd)":/shared --name mysql-db-perf \
+    sudo docker run --rm -v "$(pwd)":/shared --name mysql-db-perf \
       -e MYSQL_ROOT_PASSWORD=coderunnerhackerrank \
       --memory="4g" --cpus="1" \
       mysql:v5 /usr/local/bin/measure_db_perf.sh 2>&1 | tee db_perf.log
