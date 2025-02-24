@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-NUM_RUNS=1
+NUM_RUNS=100
 DUMP_CSV="dump_create_results.csv"
 DBPERF_CSV="db_perf_results.csv"
 

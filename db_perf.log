@@ -1,0 +1,768 @@
+========== STEP 1: Data Directory Initialization ==========
+Data directory not found. Initializing data directory...
+2025-02-24T05:06:12.854422Z 0 [Note] [MY-013667] [Server] Error-log destination "stderr" is not a file. Can not restore error log messages from previous run.
+2025-02-24T05:06:12.852527Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+2025-02-24T05:06:12.852594Z 0 [Note] [MY-010096] [Server] Ignoring --secure-file-priv value as server is running with --initialize(-insecure).
+2025-02-24T05:06:12.852621Z 0 [Note] [MY-013932] [Server] BuildID[sha1]=2c9f422dd83c2b8b3c8b15d4bf5a04af471c1289
+2025-02-24T05:06:12.852623Z 0 [Note] [MY-010949] [Server] Basedir set to /usr/.
+2025-02-24T05:06:12.852631Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.41) initializing of server in progress as process 9
+2025-02-24T05:06:12.853976Z 0 [Note] [MY-010458] [Server] --initialize specified on an existing data directory.
+2025-02-24T05:06:12.854389Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2025-02-24T05:06:12.855560Z 0 [Note] [MY-010938] [Server] Generating a new UUID: 115ec414-f26d-11ef-ae4f-0242ac110002.
+2025-02-24T05:06:12.857770Z 0 [Note] [MY-012366] [InnoDB] Using Linux native AIO
+2025-02-24T05:06:12.857868Z 0 [Note] [MY-010747] [Server] Plugin 'FEDERATED' is disabled.
+2025-02-24T05:06:12.857948Z 0 [Note] [MY-010747] [Server] Plugin 'ndbcluster' is disabled.
+2025-02-24T05:06:12.857979Z 0 [Note] [MY-010747] [Server] Plugin 'ndbinfo' is disabled.
+2025-02-24T05:06:12.857987Z 0 [Note] [MY-010747] [Server] Plugin 'ndb_transid_mysql_connection_map' is disabled.
+2025-02-24T05:06:12.859166Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-02-24T05:06:12.859219Z 1 [Note] [MY-013546] [InnoDB] Atomic write enabled
+2025-02-24T05:06:12.859251Z 1 [Note] [MY-012274] [InnoDB] The first innodb_system data file 'ibdata1' did not exist. A new tablespace will be created!
+2025-02-24T05:06:12.859274Z 1 [Note] [MY-012932] [InnoDB] PUNCH HOLE support available
+2025-02-24T05:06:12.859297Z 1 [Note] [MY-012944] [InnoDB] Uses event mutexes
+2025-02-24T05:06:12.859304Z 1 [Note] [MY-012945] [InnoDB] GCC builtin __atomic_thread_fence() is used for memory barrier
+2025-02-24T05:06:12.859311Z 1 [Note] [MY-012948] [InnoDB] Compressed tables use zlib 1.3.1
+2025-02-24T05:06:12.861865Z 1 [Note] [MY-012951] [InnoDB] Using hardware accelerated crc32 and polynomial multiplication.
+2025-02-24T05:06:12.862786Z 1 [Note] [MY-012203] [InnoDB] Directories to scan './'
+2025-02-24T05:06:12.862878Z 1 [Note] [MY-012204] [InnoDB] Scanning './'
+2025-02-24T05:06:12.862969Z 1 [Note] [MY-012208] [InnoDB] Completed space ID check of 0 files.
+2025-02-24T05:06:12.863870Z 1 [Note] [MY-012955] [InnoDB] Initializing buffer pool, total size = 128.000000M, instances = 1, chunk size =128.000000M 
+2025-02-24T05:06:12.871007Z 1 [Note] [MY-012957] [InnoDB] Completed initialization of buffer pool
+2025-02-24T05:06:12.873482Z 0 [Note] [MY-011952] [InnoDB] If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2025-02-24T05:06:12.874651Z 1 [Note] [MY-012265] [InnoDB] Setting file './ibdata1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-02-24T05:06:12.910316Z 1 [Note] [MY-012266] [InnoDB] File './ibdata1' size is now 12 MB.
+2025-02-24T05:06:12.910426Z 1 [Note] [MY-013566] [InnoDB] Double write buffer files: 2
+2025-02-24T05:06:12.910445Z 1 [Note] [MY-013565] [InnoDB] Double write buffer pages per instance: 4
+2025-02-24T05:06:12.911596Z 1 [Note] [MY-013532] [InnoDB] Using './#ib_16384_0.dblwr' for doublewrite
+2025-02-24T05:06:12.913156Z 1 [Note] [MY-013532] [InnoDB] Using './#ib_16384_1.dblwr' for doublewrite
+2025-02-24T05:06:12.947915Z 1 [Note] [MY-012893] [InnoDB] New redo log files created, LSN=8204
+2025-02-24T05:06:12.948071Z 1 [Note] [MY-013083] [InnoDB] Log background threads are being started...
+2025-02-24T05:06:12.952659Z 1 [Note] [MY-012896] [InnoDB] Creating UNDO Tablespace ./undo_001
+2025-02-24T05:06:12.952681Z 1 [Note] [MY-012897] [InnoDB] Setting file ./undo_001 size to 16 MB
+2025-02-24T05:06:12.952687Z 1 [Note] [MY-012898] [InnoDB] Physically writing the file full
+2025-02-24T05:06:13.003766Z 1 [Note] [MY-012896] [InnoDB] Creating UNDO Tablespace ./undo_002
+2025-02-24T05:06:13.003789Z 1 [Note] [MY-012897] [InnoDB] Setting file ./undo_002 size to 16 MB
+2025-02-24T05:06:13.003795Z 1 [Note] [MY-012898] [InnoDB] Physically writing the file full
+2025-02-24T05:06:13.066234Z 1 [Note] [MY-012915] [InnoDB] Created 2 undo tablespaces.
+2025-02-24T05:06:13.066686Z 1 [Note] [MY-011980] [InnoDB] GTID recovery trx_no: 0
+2025-02-24T05:06:13.067186Z 1 [Note] [MY-013776] [InnoDB] Parallel initialization of rseg complete
+2025-02-24T05:06:13.067212Z 1 [Note] [MY-013777] [InnoDB] Time taken to initialize rseg using 4 thread: 529 ms.
+2025-02-24T05:06:13.067435Z 1 [Note] [MY-011920] [InnoDB] Legacy doublewrite buffer not found: creating new
+2025-02-24T05:06:13.076701Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=24] type 20 to 13 when flushing.
+2025-02-24T05:06:13.076758Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=23] type 20 to 13 when flushing.
+2025-02-24T05:06:13.076770Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=22] type 20 to 13 when flushing.
+2025-02-24T05:06:13.076779Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=21] type 20 to 13 when flushing.
+2025-02-24T05:06:13.077404Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=20] type 20 to 13 when flushing.
+2025-02-24T05:06:13.077423Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=19] type 20 to 13 when flushing.
+2025-02-24T05:06:13.077433Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=18] type 20 to 13 when flushing.
+2025-02-24T05:06:13.077442Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=17] type 20 to 13 when flushing.
+2025-02-24T05:06:13.078050Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=16] type 20 to 13 when flushing.
+2025-02-24T05:06:13.078071Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=15] type 20 to 13 when flushing.
+2025-02-24T05:06:13.078083Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=14] type 20 to 13 when flushing.
+2025-02-24T05:06:13.078090Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=13] type 20 to 13 when flushing.
+2025-02-24T05:06:13.078797Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=12] type 20 to 13 when flushing.
+2025-02-24T05:06:13.078817Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=11] type 20 to 13 when flushing.
+2025-02-24T05:06:13.078827Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=10] type 20 to 13 when flushing.
+2025-02-24T05:06:13.078836Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=9] type 20 to 13 when flushing.
+2025-02-24T05:06:13.080231Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=40] type 20 to 13 when flushing.
+2025-02-24T05:06:13.080251Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=39] type 20 to 13 when flushing.
+2025-02-24T05:06:13.080262Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=38] type 20 to 13 when flushing.
+2025-02-24T05:06:13.080271Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=37] type 20 to 13 when flushing.
+2025-02-24T05:06:13.080886Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=36] type 20 to 13 when flushing.
+2025-02-24T05:06:13.080902Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=35] type 20 to 13 when flushing.
+2025-02-24T05:06:13.080908Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=34] type 20 to 13 when flushing.
+2025-02-24T05:06:13.080922Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=33] type 20 to 13 when flushing.
+2025-02-24T05:06:13.081557Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=32] type 20 to 13 when flushing.
+2025-02-24T05:06:13.081576Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=31] type 20 to 13 when flushing.
+2025-02-24T05:06:13.081585Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=30] type 20 to 13 when flushing.
+2025-02-24T05:06:13.081594Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=29] type 20 to 13 when flushing.
+2025-02-24T05:06:13.082244Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=28] type 20 to 13 when flushing.
+2025-02-24T05:06:13.082265Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=27] type 20 to 13 when flushing.
+2025-02-24T05:06:13.082276Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=26] type 20 to 13 when flushing.
+2025-02-24T05:06:13.082310Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=25] type 20 to 13 when flushing.
+2025-02-24T05:06:13.083644Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=79] type 20 to 13 when flushing.
+2025-02-24T05:06:13.083659Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=78] type 20 to 13 when flushing.
+2025-02-24T05:06:13.083665Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=77] type 20 to 13 when flushing.
+2025-02-24T05:06:13.083674Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=76] type 20 to 13 when flushing.
+2025-02-24T05:06:13.084252Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=75] type 20 to 13 when flushing.
+2025-02-24T05:06:13.084268Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=74] type 20 to 13 when flushing.
+2025-02-24T05:06:13.084276Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=73] type 20 to 13 when flushing.
+2025-02-24T05:06:13.084284Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=72] type 20 to 13 when flushing.
+2025-02-24T05:06:13.085538Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=71] type 20 to 13 when flushing.
+2025-02-24T05:06:13.085556Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=70] type 20 to 13 when flushing.
+2025-02-24T05:06:13.085566Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=69] type 20 to 13 when flushing.
+2025-02-24T05:06:13.085575Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=68] type 20 to 13 when flushing.
+2025-02-24T05:06:13.086176Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=67] type 20 to 13 when flushing.
+2025-02-24T05:06:13.086194Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=66] type 20 to 13 when flushing.
+2025-02-24T05:06:13.086204Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=65] type 20 to 13 when flushing.
+2025-02-24T05:06:13.086215Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=64] type 20 to 13 when flushing.
+2025-02-24T05:06:13.087329Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=95] type 20 to 13 when flushing.
+2025-02-24T05:06:13.087352Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=94] type 20 to 13 when flushing.
+2025-02-24T05:06:13.087363Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=93] type 20 to 13 when flushing.
+2025-02-24T05:06:13.087379Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=92] type 20 to 13 when flushing.
+2025-02-24T05:06:13.088727Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=91] type 20 to 13 when flushing.
+2025-02-24T05:06:13.088746Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=90] type 20 to 13 when flushing.
+2025-02-24T05:06:13.088753Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=89] type 20 to 13 when flushing.
+2025-02-24T05:06:13.088759Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=88] type 20 to 13 when flushing.
+2025-02-24T05:06:13.089474Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=87] type 20 to 13 when flushing.
+2025-02-24T05:06:13.089494Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=86] type 20 to 13 when flushing.
+2025-02-24T05:06:13.089504Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=85] type 20 to 13 when flushing.
+2025-02-24T05:06:13.089515Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=84] type 20 to 13 when flushing.
+2025-02-24T05:06:13.090031Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=83] type 20 to 13 when flushing.
+2025-02-24T05:06:13.090050Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=82] type 20 to 13 when flushing.
+2025-02-24T05:06:13.090058Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=81] type 20 to 13 when flushing.
+2025-02-24T05:06:13.090067Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=80] type 20 to 13 when flushing.
+2025-02-24T05:06:13.090590Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=111] type 20 to 13 when flushing.
+2025-02-24T05:06:13.090609Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=110] type 20 to 13 when flushing.
+2025-02-24T05:06:13.090618Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=109] type 20 to 13 when flushing.
+2025-02-24T05:06:13.090627Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=108] type 20 to 13 when flushing.
+2025-02-24T05:06:13.091905Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=107] type 20 to 13 when flushing.
+2025-02-24T05:06:13.091928Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=106] type 20 to 13 when flushing.
+2025-02-24T05:06:13.091940Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=105] type 20 to 13 when flushing.
+2025-02-24T05:06:13.091950Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=104] type 20 to 13 when flushing.
+2025-02-24T05:06:13.092576Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=103] type 20 to 13 when flushing.
+2025-02-24T05:06:13.092598Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=102] type 20 to 13 when flushing.
+2025-02-24T05:06:13.092608Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=101] type 20 to 13 when flushing.
+2025-02-24T05:06:13.092617Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=100] type 20 to 13 when flushing.
+2025-02-24T05:06:13.093187Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=99] type 20 to 13 when flushing.
+2025-02-24T05:06:13.093205Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=98] type 20 to 13 when flushing.
+2025-02-24T05:06:13.093215Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=97] type 20 to 13 when flushing.
+2025-02-24T05:06:13.093224Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=96] type 20 to 13 when flushing.
+2025-02-24T05:06:13.093784Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=127] type 20 to 13 when flushing.
+2025-02-24T05:06:13.093804Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=126] type 20 to 13 when flushing.
+2025-02-24T05:06:13.093814Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=125] type 20 to 13 when flushing.
+2025-02-24T05:06:13.093823Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=124] type 20 to 13 when flushing.
+2025-02-24T05:06:13.094513Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=123] type 20 to 13 when flushing.
+2025-02-24T05:06:13.094533Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=122] type 20 to 13 when flushing.
+2025-02-24T05:06:13.094542Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=121] type 20 to 13 when flushing.
+2025-02-24T05:06:13.094551Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=120] type 20 to 13 when flushing.
+2025-02-24T05:06:13.096027Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=119] type 20 to 13 when flushing.
+2025-02-24T05:06:13.096066Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=118] type 20 to 13 when flushing.
+2025-02-24T05:06:13.096078Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=117] type 20 to 13 when flushing.
+2025-02-24T05:06:13.096091Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=116] type 20 to 13 when flushing.
+2025-02-24T05:06:13.096759Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=115] type 20 to 13 when flushing.
+2025-02-24T05:06:13.096790Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=114] type 20 to 13 when flushing.
+2025-02-24T05:06:13.096801Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=113] type 20 to 13 when flushing.
+2025-02-24T05:06:13.096811Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=112] type 20 to 13 when flushing.
+2025-02-24T05:06:13.097446Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=143] type 20 to 13 when flushing.
+2025-02-24T05:06:13.097471Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=142] type 20 to 13 when flushing.
+2025-02-24T05:06:13.097478Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=141] type 20 to 13 when flushing.
+2025-02-24T05:06:13.097485Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=140] type 20 to 13 when flushing.
+2025-02-24T05:06:13.098082Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=139] type 20 to 13 when flushing.
+2025-02-24T05:06:13.098102Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=138] type 20 to 13 when flushing.
+2025-02-24T05:06:13.098110Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=137] type 20 to 13 when flushing.
+2025-02-24T05:06:13.098120Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=136] type 20 to 13 when flushing.
+2025-02-24T05:06:13.098707Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=135] type 20 to 13 when flushing.
+2025-02-24T05:06:13.098731Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=134] type 20 to 13 when flushing.
+2025-02-24T05:06:13.098740Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=133] type 20 to 13 when flushing.
+2025-02-24T05:06:13.098749Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=132] type 20 to 13 when flushing.
+2025-02-24T05:06:13.100143Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=131] type 20 to 13 when flushing.
+2025-02-24T05:06:13.100167Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=130] type 20 to 13 when flushing.
+2025-02-24T05:06:13.100176Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=129] type 20 to 13 when flushing.
+2025-02-24T05:06:13.100186Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=128] type 20 to 13 when flushing.
+2025-02-24T05:06:13.100841Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=159] type 20 to 13 when flushing.
+2025-02-24T05:06:13.100873Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=158] type 20 to 13 when flushing.
+2025-02-24T05:06:13.100883Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=157] type 20 to 13 when flushing.
+2025-02-24T05:06:13.100892Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=156] type 20 to 13 when flushing.
+2025-02-24T05:06:13.101846Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=155] type 20 to 13 when flushing.
+2025-02-24T05:06:13.101873Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=154] type 20 to 13 when flushing.
+2025-02-24T05:06:13.101888Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=153] type 20 to 13 when flushing.
+2025-02-24T05:06:13.101902Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=152] type 20 to 13 when flushing.
+2025-02-24T05:06:13.102509Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=151] type 20 to 13 when flushing.
+2025-02-24T05:06:13.102530Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=150] type 20 to 13 when flushing.
+2025-02-24T05:06:13.102541Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=149] type 20 to 13 when flushing.
+2025-02-24T05:06:13.102551Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=148] type 20 to 13 when flushing.
+2025-02-24T05:06:13.103808Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=147] type 20 to 13 when flushing.
+2025-02-24T05:06:13.103826Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=146] type 20 to 13 when flushing.
+2025-02-24T05:06:13.103836Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=145] type 20 to 13 when flushing.
+2025-02-24T05:06:13.103847Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=144] type 20 to 13 when flushing.
+2025-02-24T05:06:13.104449Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=175] type 20 to 13 when flushing.
+2025-02-24T05:06:13.104469Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=174] type 20 to 13 when flushing.
+2025-02-24T05:06:13.104479Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=173] type 20 to 13 when flushing.
+2025-02-24T05:06:13.104488Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=172] type 20 to 13 when flushing.
+2025-02-24T05:06:13.105043Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=171] type 20 to 13 when flushing.
+2025-02-24T05:06:13.105060Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=170] type 20 to 13 when flushing.
+2025-02-24T05:06:13.105071Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=169] type 20 to 13 when flushing.
+2025-02-24T05:06:13.105080Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=168] type 20 to 13 when flushing.
+2025-02-24T05:06:13.105619Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=167] type 20 to 13 when flushing.
+2025-02-24T05:06:13.105645Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=166] type 20 to 13 when flushing.
+2025-02-24T05:06:13.105655Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=165] type 20 to 13 when flushing.
+2025-02-24T05:06:13.105665Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=164] type 20 to 13 when flushing.
+2025-02-24T05:06:13.106266Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=163] type 20 to 13 when flushing.
+2025-02-24T05:06:13.106298Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=162] type 20 to 13 when flushing.
+2025-02-24T05:06:13.106309Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=161] type 20 to 13 when flushing.
+2025-02-24T05:06:13.106318Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=160] type 20 to 13 when flushing.
+2025-02-24T05:06:13.107731Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=191] type 20 to 13 when flushing.
+2025-02-24T05:06:13.107752Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=190] type 20 to 13 when flushing.
+2025-02-24T05:06:13.107764Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=189] type 20 to 13 when flushing.
+2025-02-24T05:06:13.107778Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=188] type 20 to 13 when flushing.
+2025-02-24T05:06:13.108387Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=187] type 20 to 13 when flushing.
+2025-02-24T05:06:13.108413Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=186] type 20 to 13 when flushing.
+2025-02-24T05:06:13.108425Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=185] type 20 to 13 when flushing.
+2025-02-24T05:06:13.108436Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=184] type 20 to 13 when flushing.
+2025-02-24T05:06:13.109733Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=183] type 20 to 13 when flushing.
+2025-02-24T05:06:13.109752Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=182] type 20 to 13 when flushing.
+2025-02-24T05:06:13.109761Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=181] type 20 to 13 when flushing.
+2025-02-24T05:06:13.109771Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=180] type 20 to 13 when flushing.
+2025-02-24T05:06:13.110380Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=179] type 20 to 13 when flushing.
+2025-02-24T05:06:13.110406Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=178] type 20 to 13 when flushing.
+2025-02-24T05:06:13.110417Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=177] type 20 to 13 when flushing.
+2025-02-24T05:06:13.110427Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=176] type 20 to 13 when flushing.
+2025-02-24T05:06:13.120830Z 1 [Note] [MY-011924] [InnoDB] Legacy atomic write buffer created
+2025-02-24T05:06:13.120867Z 1 [Note] [MY-012923] [InnoDB] Creating shared tablespace for temporary tables
+2025-02-24T05:06:13.121836Z 1 [Note] [MY-012265] [InnoDB] Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-02-24T05:06:13.192257Z 1 [Note] [MY-012266] [InnoDB] File './ibtmp1' size is now 12 MB.
+2025-02-24T05:06:13.218518Z 1 [Note] [MY-013018] [InnoDB] Created 128 and tracked 128 new rollback segment(s) in the temporary tablespace. 128 are now active.
+2025-02-24T05:06:13.221293Z 1 [Note] [MY-013018] [InnoDB] Created 128 and tracked 128 new rollback segment(s) in undo tablespace number 1. 128 are now active.
+2025-02-24T05:06:13.223921Z 1 [Note] [MY-013018] [InnoDB] Created 128 and tracked 128 new rollback segment(s) in undo tablespace number 2. 128 are now active.
+2025-02-24T05:06:13.320143Z 1 [Note] [MY-012976] [InnoDB] 8.0.41 started; log sequence number 2399391
+2025-02-24T05:06:13.325030Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2025-02-24T05:06:13.326601Z 1 [Note] [MY-011088] [Server] Data dictionary initializing version '80023'.
+2025-02-24T05:06:13.576902Z 1 [Note] [MY-010007] [Server] Installed data dictionary with version 80023
+2025-02-24T05:06:13.691920Z 2 [Note] [MY-011019] [Server] Created system views with I_S version 80023.
+2025-02-24T05:06:14.041523Z 0 [Note] [MY-013911] [Server] Crash recovery finished in InnoDB engine. No attempts to commit, rollback or prepare any transactions.
+2025-02-24T05:06:14.048123Z 0 [Note] [MY-012487] [InnoDB] DDL log recovery : begin
+2025-02-24T05:06:14.048151Z 0 [Note] [MY-012488] [InnoDB] DDL log recovery : end
+2025-02-24T05:06:14.049627Z 0 [Note] [MY-012922] [InnoDB] Waiting for purge to start
+2025-02-24T05:06:14.102767Z 0 [Note] [MY-010913] [Server] You have not provided a mandatory server-id. Servers in a replication topology must have unique server-ids. Please refer to the proper server start-up parameters documentation.
+2025-02-24T05:06:14.477242Z 0 [Note] [MY-010305] [Server] Auto generated SSL certificates are placed in data directory.
+2025-02-24T05:06:14.569999Z 0 [Note] [MY-010309] [Server] Auto generated RSA key files through --sha256_password_auto_generate_rsa_keys are placed in data directory.
+2025-02-24T05:06:14.570559Z 0 [Note] [MY-010308] [Server] Skipping generation of RSA key pair through --caching_sha2_password_auto_generate_rsa_keys as key files are present in data directory.
+2025-02-24T05:06:14.572024Z 6 [Note] [MY-011061] [Server] Creating the system database.
+2025-02-24T05:06:14.572052Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2025-02-24T05:06:14.572146Z 6 [Note] [MY-011061] [Server] Creating the system tables.
+2025-02-24T05:06:14.732904Z 6 [Note] [MY-011061] [Server] Filling in the system tables, part 1.
+2025-02-24T05:06:14.748564Z 6 [Note] [MY-011061] [Server] Filling in the system tables, part 2.
+2025-02-24T05:06:15.118996Z 6 [Note] [MY-011061] [Server] Filling in the mysql.help table.
+2025-02-24T05:06:15.209635Z 6 [Note] [MY-011061] [Server] Creating the system users for internal usage.
+2025-02-24T05:06:15.233581Z 6 [Note] [MY-011061] [Server] Creating the sys schema.
+2025-02-24T05:06:15.661937Z 6 [Note] [MY-010456] [Server] Bootstrapping complete
+2025-02-24T05:06:15.689838Z 0 [Note] [MY-010067] [Server] Giving 0 client threads a chance to die gracefully
+2025-02-24T05:06:15.689887Z 0 [Note] [MY-010117] [Server] Shutting down replica threads
+2025-02-24T05:06:15.689896Z 0 [Note] [MY-010118] [Server] Forcefully disconnecting 0 remaining clients
+2025-02-24T05:06:15.691195Z 0 [Note] [MY-012330] [InnoDB] FTS optimize thread exiting.
+2025-02-24T05:06:16.519200Z 0 [Note] [MY-013072] [InnoDB] Starting shutdown...
+2025-02-24T05:06:16.522312Z 0 [Note] [MY-011944] [InnoDB] Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2025-02-24T05:06:16.522625Z 0 [Note] [MY-011944] [InnoDB] Buffer pool(s) dump completed at 250224  5:06:16
+2025-02-24T05:06:16.999942Z 0 [Note] [MY-013084] [InnoDB] Log background threads are being closed...
+2025-02-24T05:06:17.516520Z 0 [Note] [MY-013854] [InnoDB] Bytes written to disk by DBLWR (ON): 32292864
+2025-02-24T05:06:17.516987Z 0 [Note] [MY-012980] [InnoDB] Shutdown completed; log sequence number 18912575
+2025-02-24T05:06:17.520914Z 0 [Note] [MY-012255] [InnoDB] Removed temporary tablespace data file: "ibtmp1"
+Data directory initialization took: 4.726518 seconds.
+========== STEP 2: MySQL Server Startup ==========
+Starting MySQL server...
+MySQL server startup took: 0.613705 seconds.
+========== STEP 3: Dump Restoration ==========
+Dump restoration took: 0.131679 seconds.
+========== STEP 4: Query Execution ==========
+name
+Hercules Inc.
+John Hancock Financial Services Inc.
+Ecolab Inc.
+Volt Information Sciences Inc
+Fidelity National Financial Inc.
+Bethlehem Steel Corporation
+The Bear Stearns Companies Inc.
+Sabre Holdings Corp
+Scientific-Atlanta Inc
+Cabot Corp
+Dole Food Company, Inc.
+Ivax Corp.
+Ryder System Inc
+United Auto Group Inc
+Kindred Healthcare Inc.
+Fiserv Inc.
+Household International Corp.
+Williams Companies Inc
+Old Republic International Corp.
+Corn Products International Inc.
+Devon Energy Corporation
+Silicon Graphics Inc
+Mercury General Corporation
+Budget Group, Inc.
+Boston Scientific Corporation
+Lincoln National Corporation
+KPMG Consulting Inc.
+Service Corp. International
+Hilton Hotels Corp.
+Schering-Plough Corp
+TXU Corp
+SunGard Data Systems Inc.
+RGS Energy Group Inc
+Pennzoil-Quaker State Company
+Centex Corp.
+Tesoro Petroleum Corp.
+Becton, Dickinson and Company
+Vectren Corporation
+Capital One Financial Corp.
+Lands End Inc.
+Foamex International Inc
+Bed Bath & Beyond Inc.
+McCormick & Company Incorporated
+Cisco Systems Inc.
+Solutia Inc
+Beverly Enterprises, Inc.
+Michaels Stores Inc.
+Ocean Energy Inc
+Manpower Inc.
+First Data Corp.
+Darden Restaurants Inc.
+BellSouth Corporation
+WESCO International Inc
+Avaya Inc.
+Levi Strauss & Co.
+M & T Bank Corporation
+Commercial Metals Co.
+Lam Research Corporation
+Astoria Financial Corporation
+CSX Corp.
+Loews Corporation
+Target Corp.
+American Water Works Company, Inc.
+Allied Waste Industries, Inc.
+Adolph Coors Company
+Albertsons, Inc.
+Airgas, Inc.
+International Flavors & Fragrances Inc.
+MDU Resources Group Inc.
+Apache Corporation
+Eaton Corporation
+Emcor Group Inc.
+CMS Energy Corp.
+Broadwing, Inc.
+Hub Group Inc.
+First Tennessee National Corp.
+Weatherford International Inc
+W.R. Grace & Co
+Sysco Corp
+Burlington Coat Factory Warehouse Corporation
+BorgWarner Inc.
+Kerr-McGee Corporation
+Citizens Communications Co.
+W.R. Berkley Corporation
+WorldCom Inc
+Prudential Financial Inc.
+Pittston Brinks Group
+Georgia-Pacific Corporation
+Avnet, Inc.
+Continental Airlines Inc.
+Wallace Computer Services Inc
+Unitrin Inc
+Foster Wheeler Ltd.
+LandAmerica Financial Group Inc.
+Caremark Rx Inc.
+Shaw Group Inc
+Goodrich Corporation
+ARAMARK Corporation
+Campbell Soup Co.
+GATX Corporation
+H.J. Heinz Company
+J.C. Penny Co.
+AFLAC Incorporated
+Allegheny Technologies Incorporated
+McDonalds Corporation
+New Jersey Resources Corporation
+Nicor Inc
+Amkor Technology, Inc.
+Reliant Energy Inc.
+Archer Daniels Midland Company
+GenCorp Inc.
+H.B. Fuller Company
+Toys R Us Inc
+American Express Company
+Cox Communications Inc.
+Genesis Health Ventures Inc.
+Exide Technologies
+Paychex Inc
+Hovnanian Enterprises Inc.
+Affiliated Computer Services, Inc.
+National City Corp.
+NVR Inc
+Verizon Communications Inc
+National Fuel Gas Company
+Toll Brothers Inc
+Cendant Corp
+DTE Energy Co.
+Constellation Brands Inc.
+The Lubrizol Corporation
+SCI Systems Onc.
+Mail-Well Inc.
+Lucent Technologies Inc.
+Cummins Inc.
+NCR Corporation
+Jacobs Engineering Group Inc.
+Siebel Systems Inc
+Seaboard Corp
+Xcel Energy Inc
+Applied Industrial Technologies, Inc.
+Gap Inc.
+Worthington Industries Inc
+Hillenbrand Industries Inc.
+Mellon Financial Corporation
+Weis Markets Inc.
+Fortune Brands Inc.
+Harley-Davidson Inc.
+Scholastic Corp
+DaVita Inc.
+DQE Inc.
+Rockwell Automation Inc
+Safeguard Scientifics Inc.
+Office Depot Inc.
+Sierra Health Services Inc
+Lyondell Chemical Company
+Hibernia Corp.
+Emerson Electric Co.
+SLM Corporation
+Scotts Company
+Adelphia Communications Corporation
+Analog Devices, Inc.
+Health Net Inc.
+Pinnacle West Capital Corp
+Benchmark Electronics, Inc.
+Amtran, Inc.
+Unified Western Grocers Inc
+Compuware Corp.
+Tiffany & Co
+ArvinMeritor, Inc.
+DPL Inc.
+Convergys Corp.
+Baxter International Inc.
+Dell Computer Corporation
+AutoZone, Inc.
+Southern Union Company
+Pfizer Inc
+Wyeth
+Manor Care Inc.
+Tecumseh Products Company
+The Boeing Company
+Pioneer-Standard Electronics Inc.
+Wyndham International Inc
+US Airways Group Inc
+USA Interactive
+Nordstrom Inc
+Quantum Corp
+Synovus Financial Corp.
+Pathmark Stores Inc.
+Circuit City Stores Inc.
+Western Gas Resources Inc
+Bemis Company, Inc.
+Conseco Inc.
+IKON Office Solutions Inc.
+Guidant Corporation
+Health Management Associates Inc.
+Cooper Industries Ltd.
+CSK Auto Corp.
+E.I. Du Pont de Nemours and Company
+Advanced Micro Devices, Inc.
+Sonic Automotive Inc.
+Air Products and Chemicals, Inc.
+Equity Residential Properties Trust
+Grey Global Group Inc.
+Bank One Corporation
+Medtronic Inc.
+Wells Fargo & Company
+Revlon Inc
+PNM Resources Inc
+Raytheon Company
+Wachovia Corporation
+Mandalay Resort Group
+Mattel Inc.
+Nextel Communications Inc
+Comfort Systems USA Inc.
+Interpublic Group of Companies Inc.
+Abbott Laboratories
+Adams Resources & Energy, Inc.
+Standard Pacific Corp.
+Encompass Services Corporation
+Puget Energy Inc.
+Qwest Communications Intl Inc
+Cintas Corp.
+PPL Corp
+AMERCO
+Allmerica Financial Corporation
+Qualcomm Inc
+Intuit Inc.
+AMC Entertainment Inc.
+AGCO Corporation
+Oglethorpe Power Corp.
+Regions Financial Corp.
+Pacific Gas & Electric Corp.
+The Allstate Corporation
+Intel Corporation
+Northrop Grumman Corporation
+Dollar General Corporation
+Millennium Chemicals Inc.
+Liz Claiborne Inc.
+Kellogg Company
+Willamette Industries Inc.
+Ryerson Tull Inc
+Torchmark Corporation
+Texas Industries Inc.
+Tribune Company
+Hasbro Inc.
+Sears Roebuck & Co
+Fisher Scientific International Inc.
+Sun Microsystems Inc.
+PSS World Medical Inc
+Safeway Inc
+Tower Automotive Inc.
+Peoples Energy Corp.
+Idacorp Inc.
+McLeodUSA Incorporated
+American Electric Power Company, Inc.
+Lehman Brothers Holdings Inc.
+TransMontaigne Inc
+Markel Corporation
+Federated Department Stores Inc.
+Flowers Foods Inc.
+Provident Financial Group
+Humana Inc.
+Ingram Micro Inc.
+Maxxam Inc.
+Washington Mutual Inc
+Werner Enterprises Inc
+Rite Aid Corp
+Express Scripts Inc.
+Corning Inc.
+Applera Corporation
+CDI Corp.
+Mohawk Industries Inc.
+American Eagle Outfitters, Inc.
+Ball Corporation
+Owens-Illinois Inc
+TravelCenters of America Inc.
+Forest Laboratories Inc.
+Park Place Entertainment Corp
+Farmland Industries Inc.
+Potomac Electric Power Co.
+Newmont Mining Corporation
+Temple-Inland Inc
+Morgan Stanley Dean Witter & Co.
+Smithfield Foods Inc
+StanCorp Financial Group Inc
+Omnicare Inc
+Legg Mason Inc.
+Dreyers Grand Ice Cream, Inc.
+Science Applications Intl. Inc.
+Metaldyne Corporation
+Fleetwood Enterprises Inc.
+Merrill Lynch & Co. Inc.
+Wakenhut Corporation
+Beckman Coulter, Inc.
+Staff Leasing Inc.
+Delphi Corp.
+Pantry Inc
+Varco International Inc
+Thomas & Betts Corporation
+Comdisco Inc.
+Aetna Inc.
+Knight-Ridder Inc.
+Calpine Corp.
+Coca-Cola Enterprises Inc.
+Polo Ralph Lauren Corp
+PerkinElmer Inc
+CDW Computer Centers Inc.
+VF Corporation
+Trinity Industries Inc
+Apple Computer, Inc.
+Valero Energy Corporation
+Vishay Intertechnology Inc
+Honeywell International Inc.
+UGI Corporation
+Integrated Electrical Services Inc.
+Brinker International, Inc.
+WPS Resources Corporation
+Henry Schein Inc.
+Johnson & Johnson
+Tellabs Inc.
+Dominion Resources, Inc.
+Kellwood Company
+Marriott International Inc.
+AT&T Corp.
+Timken Company
+Hewlett-Packard Company
+Wendys International Inc
+Charles Schwab Corp.
+Western Digital Inc
+Unova Inc
+Allergan, Inc.
+WGL Holdings Inc
+Saks Inc
+Family Dollar Stores Inc.
+Washington Post Co.
+Dillards Inc.
+Enron Corp.
+Gateway Inc.
+Ohio Casualty Corp.
+Gentiva Health Services Inc.
+Comverse Technology Inc.
+Allegheny Energy, Inc.
+Ryland Group Inc.
+Pharmacia Corp
+Tyson Foods Inc
+BJs Wholesale Club, Inc.
+Universal Forest Products Inc
+Di Giorgio Corporation
+Robert Half International Inc.
+CH2M Hill Cos. Ltd.
+Magellan Health Services Inc.
+Pulte Homes Inc
+Acterna Corp.
+Coca-Cola Co.
+Sovereign Bancorp Inc.
+Storage Technology Corporation
+Marsh & McLennan Companies Inc.
+Mirant Corporation
+Equitable Resources Inc.
+Kroger Co.
+Masco Corporation
+Universal Health Services Inc
+Nucor Corp
+Conectiv, Inc
+Airborne, Inc.
+Quintiles Transnational
+Supervalu Inc
+Federal Mogul Corp.
+PolyOne Corp
+Applied Materials, Inc.
+Stilwell Financial Inc
+Computer Associates International Inc.
+El Paso Corporation
+The Black & Decker Corporation
+Massey Energy Company
+World Fuel Services Corporation
+Northeast Utilities System
+The Bank of New York Company, Inc.
+TECO Energy Inc
+Del Monte Foods Co
+Hon Industries Inc.
+Fleming Companies Inc.
+Golden State Bancorp Inc.
+Kelly Services Inc.
+Earthlink, Inc.
+Bell Microproducts Inc.
+Great Plains Energy Inc.
+Primedia Inc
+Pride International Inc
+R.R. Donnelley & Sons Company
+Eli Lilly and Company
+Dover Corporation, Inc.
+Xerox Corp
+Solectron Corp
+Johnson Controls Inc.
+Yum Brands Inc.
+Rockwell Collins Inc
+PepsiAmericas Inc.
+The Goodyear Tire & Rubber Company
+National Oilwell Inc
+K-Mart Corp.
+IMC Global Inc.
+SunTrust Banks Inc
+Sonoco Products Co.
+Stater Bros. Holdings Inc.
+Shopko Stores Inc
+York International Corp
+Marsh Supermarkets Inc.
+OGE Energy Corp
+Deere & Company
+Anixter International Inc.
+Great Lakes Chemical Corporation
+Williams Sonoma Inc
+Big Lots, Inc.
+Cooper Tire & Rubber Co.
+C. H. Robinson Worldwide Inc.
+PPG Industries Inc
+NorthWestern Corporation
+UST Inc
+Metris Companies Inc
+Marshall & Ilsley Corporation
+Aquila, Inc.
+Penn Traffic Co.
+Tenet Healthcare Corporation
+BB&T Corporation
+Atmos Energy Corporation
+E.W. Scripps Company
+Pep Boys Manny, Moe & Jack
+Public Service Enterprise Group Inc.
+Hormel Foods Corp.
+OM Group Inc
+Ciena Corp.
+AK Steel Holding Corporation
+Linens n Things Inc.
+Baker Hughes Incorporated
+Tektronix Inc
+Wellpoint Health Networks Inc
+Ames Department Stores, Inc.
+Veritas Software Corporation
+Occidental Petroleum Corp
+Best Buy Co., Inc.
+Pro-Fac Cooperative Inc.
+Rohm & Haas Co.
+Cigna Corp
+Huntington Bancshares Inc.
+Whole Foods Market Inc
+Sprint Corp.
+Comcast Corp.
+Ross Stores Inc
+Visteon Corporation
+Bristol-Myers Squibb Company
+Stryker Corp
+United Defense Industries Inc.
+Berkshire Hathaway Inc.
+Trump Hotels & Casino Resorts Inc.
+Concord EFS Inc.
+US Oncology Inc
+Pactiv Corp
+Danaher Corporation
+International Paper Co.
+Electronic Arts Inc.
+Cardinal Health Inc.
+Alaska Air Group, Inc.
+Jack In The Box Inc.
+Parker Hannifin Corp.
+PNC Financial Services Group Inc.
+Goldman Sachs Group Inc.
+Anadarko Petroleum Corporation
+Precision Castparts Corp
+Stewart & Stevenson Services Inc
+Universal Corporation
+Gannett Co., Inc.
+Oracle Corp
+Quanta Services Inc.
+Dow Jones & Company, Inc.
+Genuity Inc.
+Apartment Investment and Management Company
+American Axle & Manufacturing Holdings, Inc.
+Reliance Steel & Aluminum Co.
+Amazon.com, Inc.
+Scana Corp.
+Paccar Inc
+Burlington Industries, Inc.
+Alcoa Inc.
+Principal Financial Group Inc.
+Owens Corning
+First National of Nebraska Inc.
+General Electric Company
+Southern Company
+Energy East Corporation
+Crompton Corp.
+Equity Office Properties Trust
+Texas Instruments Incorporated
+NiSource Inc
+Dana Corporation
+Hawaiian Electric Industries Inc.
+New York Times Company
+Sherwin-Williams Company
+Ferro Corp.
+Lowes Companies Inc.
+Philip Morris Companies Inc.
+Union Pacific Corporation
+U.S. Bancorp
+Carpenter Technology Corp.
+Stanley Works
+XO Communications Inc
+The McGraw-Hill Companies Inc.
+Cadence Design Systems, Inc.
+Query execution took: 0.011250 seconds.
+========== STEP 5: Cleanup ==========
+Benchmarking (DB Performance) Completed.
+Results: ddi_t=4.726518, ss_t=0.613705, dr_t=0.131679, qe_t=0.011250
