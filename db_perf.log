@@ -1,258 +1,258 @@
 ========== STEP 1: Data Directory Initialization ==========
 Data directory not found. Initializing data directory...
-2025-02-24T07:10:26.809308Z 0 [Note] [MY-013667] [Server] Error-log destination "stderr" is not a file. Can not restore error log messages from previous run.
-2025-02-24T07:10:26.807352Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-2025-02-24T07:10:26.807419Z 0 [Note] [MY-010096] [Server] Ignoring --secure-file-priv value as server is running with --initialize(-insecure).
-2025-02-24T07:10:26.807448Z 0 [Note] [MY-013932] [Server] BuildID[sha1]=2c9f422dd83c2b8b3c8b15d4bf5a04af471c1289
-2025-02-24T07:10:26.807451Z 0 [Note] [MY-010949] [Server] Basedir set to /usr/.
-2025-02-24T07:10:26.807460Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.41) initializing of server in progress as process 9
-2025-02-24T07:10:26.808885Z 0 [Note] [MY-010458] [Server] --initialize specified on an existing data directory.
-2025-02-24T07:10:26.809280Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
-2025-02-24T07:10:26.810448Z 0 [Note] [MY-010938] [Server] Generating a new UUID: 6c46048f-f27e-11ef-a6fa-0242ac110002.
-2025-02-24T07:10:26.813163Z 0 [Note] [MY-012366] [InnoDB] Using Linux native AIO
-2025-02-24T07:10:26.813323Z 0 [Note] [MY-010747] [Server] Plugin 'FEDERATED' is disabled.
-2025-02-24T07:10:26.813427Z 0 [Note] [MY-010747] [Server] Plugin 'ndbcluster' is disabled.
-2025-02-24T07:10:26.813457Z 0 [Note] [MY-010747] [Server] Plugin 'ndbinfo' is disabled.
-2025-02-24T07:10:26.813465Z 0 [Note] [MY-010747] [Server] Plugin 'ndb_transid_mysql_connection_map' is disabled.
-2025-02-24T07:10:26.814856Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-2025-02-24T07:10:26.814884Z 1 [Note] [MY-013546] [InnoDB] Atomic write enabled
-2025-02-24T07:10:26.814902Z 1 [Note] [MY-012274] [InnoDB] The first innodb_system data file 'ibdata1' did not exist. A new tablespace will be created!
-2025-02-24T07:10:26.814918Z 1 [Note] [MY-012932] [InnoDB] PUNCH HOLE support available
-2025-02-24T07:10:26.814940Z 1 [Note] [MY-012944] [InnoDB] Uses event mutexes
-2025-02-24T07:10:26.814948Z 1 [Note] [MY-012945] [InnoDB] GCC builtin __atomic_thread_fence() is used for memory barrier
-2025-02-24T07:10:26.814956Z 1 [Note] [MY-012948] [InnoDB] Compressed tables use zlib 1.3.1
-2025-02-24T07:10:26.816819Z 1 [Note] [MY-012951] [InnoDB] Using hardware accelerated crc32 and polynomial multiplication.
-2025-02-24T07:10:26.817591Z 1 [Note] [MY-012203] [InnoDB] Directories to scan './'
-2025-02-24T07:10:26.817653Z 1 [Note] [MY-012204] [InnoDB] Scanning './'
-2025-02-24T07:10:26.817719Z 1 [Note] [MY-012208] [InnoDB] Completed space ID check of 0 files.
-2025-02-24T07:10:26.818541Z 1 [Note] [MY-012955] [InnoDB] Initializing buffer pool, total size = 128.000000M, instances = 1, chunk size =128.000000M 
-2025-02-24T07:10:26.825847Z 1 [Note] [MY-012957] [InnoDB] Completed initialization of buffer pool
-2025-02-24T07:10:26.828343Z 0 [Note] [MY-011952] [InnoDB] If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
-2025-02-24T07:10:26.829345Z 1 [Note] [MY-012265] [InnoDB] Setting file './ibdata1' size to 12 MB. Physically writing the file full; Please wait ...
-2025-02-24T07:10:26.864068Z 1 [Note] [MY-012266] [InnoDB] File './ibdata1' size is now 12 MB.
-2025-02-24T07:10:26.864168Z 1 [Note] [MY-013566] [InnoDB] Double write buffer files: 2
-2025-02-24T07:10:26.864213Z 1 [Note] [MY-013565] [InnoDB] Double write buffer pages per instance: 4
-2025-02-24T07:10:26.865218Z 1 [Note] [MY-013532] [InnoDB] Using './#ib_16384_0.dblwr' for doublewrite
-2025-02-24T07:10:26.866549Z 1 [Note] [MY-013532] [InnoDB] Using './#ib_16384_1.dblwr' for doublewrite
-2025-02-24T07:10:26.900563Z 1 [Note] [MY-012893] [InnoDB] New redo log files created, LSN=8204
-2025-02-24T07:10:26.900703Z 1 [Note] [MY-013083] [InnoDB] Log background threads are being started...
-2025-02-24T07:10:26.904675Z 1 [Note] [MY-012896] [InnoDB] Creating UNDO Tablespace ./undo_001
-2025-02-24T07:10:26.904696Z 1 [Note] [MY-012897] [InnoDB] Setting file ./undo_001 size to 16 MB
-2025-02-24T07:10:26.904701Z 1 [Note] [MY-012898] [InnoDB] Physically writing the file full
-2025-02-24T07:10:26.957435Z 1 [Note] [MY-012896] [InnoDB] Creating UNDO Tablespace ./undo_002
-2025-02-24T07:10:26.957472Z 1 [Note] [MY-012897] [InnoDB] Setting file ./undo_002 size to 16 MB
-2025-02-24T07:10:26.957481Z 1 [Note] [MY-012898] [InnoDB] Physically writing the file full
-2025-02-24T07:10:27.021127Z 1 [Note] [MY-012915] [InnoDB] Created 2 undo tablespaces.
-2025-02-24T07:10:27.021681Z 1 [Note] [MY-011980] [InnoDB] GTID recovery trx_no: 0
-2025-02-24T07:10:27.022503Z 1 [Note] [MY-013776] [InnoDB] Parallel initialization of rseg complete
-2025-02-24T07:10:27.022526Z 1 [Note] [MY-013777] [InnoDB] Time taken to initialize rseg using 4 thread: 854 ms.
-2025-02-24T07:10:27.022843Z 1 [Note] [MY-011920] [InnoDB] Legacy doublewrite buffer not found: creating new
-2025-02-24T07:10:27.032490Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=24] type 20 to 13 when flushing.
-2025-02-24T07:10:27.032526Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=23] type 20 to 13 when flushing.
-2025-02-24T07:10:27.032536Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=22] type 20 to 13 when flushing.
-2025-02-24T07:10:27.032547Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=21] type 20 to 13 when flushing.
-2025-02-24T07:10:27.033817Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=20] type 20 to 13 when flushing.
-2025-02-24T07:10:27.033843Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=19] type 20 to 13 when flushing.
-2025-02-24T07:10:27.033856Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=18] type 20 to 13 when flushing.
-2025-02-24T07:10:27.033870Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=17] type 20 to 13 when flushing.
-2025-02-24T07:10:27.034612Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=16] type 20 to 13 when flushing.
-2025-02-24T07:10:27.034637Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=15] type 20 to 13 when flushing.
-2025-02-24T07:10:27.034649Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=14] type 20 to 13 when flushing.
-2025-02-24T07:10:27.034660Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=13] type 20 to 13 when flushing.
-2025-02-24T07:10:27.036005Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=12] type 20 to 13 when flushing.
-2025-02-24T07:10:27.036026Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=11] type 20 to 13 when flushing.
-2025-02-24T07:10:27.036037Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=10] type 20 to 13 when flushing.
-2025-02-24T07:10:27.036047Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=9] type 20 to 13 when flushing.
-2025-02-24T07:10:27.036630Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=40] type 20 to 13 when flushing.
-2025-02-24T07:10:27.036650Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=39] type 20 to 13 when flushing.
-2025-02-24T07:10:27.036661Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=38] type 20 to 13 when flushing.
-2025-02-24T07:10:27.036672Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=37] type 20 to 13 when flushing.
-2025-02-24T07:10:27.037417Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=36] type 20 to 13 when flushing.
-2025-02-24T07:10:27.037436Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=35] type 20 to 13 when flushing.
-2025-02-24T07:10:27.037443Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=34] type 20 to 13 when flushing.
-2025-02-24T07:10:27.037463Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=33] type 20 to 13 when flushing.
-2025-02-24T07:10:27.038136Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=32] type 20 to 13 when flushing.
-2025-02-24T07:10:27.038155Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=31] type 20 to 13 when flushing.
-2025-02-24T07:10:27.038166Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=30] type 20 to 13 when flushing.
-2025-02-24T07:10:27.038176Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=29] type 20 to 13 when flushing.
-2025-02-24T07:10:27.038758Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=28] type 20 to 13 when flushing.
-2025-02-24T07:10:27.038778Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=27] type 20 to 13 when flushing.
-2025-02-24T07:10:27.038790Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=26] type 20 to 13 when flushing.
-2025-02-24T07:10:27.038806Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=25] type 20 to 13 when flushing.
-2025-02-24T07:10:27.039386Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=79] type 20 to 13 when flushing.
-2025-02-24T07:10:27.039406Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=78] type 20 to 13 when flushing.
-2025-02-24T07:10:27.039429Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=77] type 20 to 13 when flushing.
-2025-02-24T07:10:27.039440Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=76] type 20 to 13 when flushing.
-2025-02-24T07:10:27.040020Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=75] type 20 to 13 when flushing.
-2025-02-24T07:10:27.040036Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=74] type 20 to 13 when flushing.
-2025-02-24T07:10:27.040047Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=73] type 20 to 13 when flushing.
-2025-02-24T07:10:27.040058Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=72] type 20 to 13 when flushing.
-2025-02-24T07:10:27.040664Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=71] type 20 to 13 when flushing.
-2025-02-24T07:10:27.040687Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=70] type 20 to 13 when flushing.
-2025-02-24T07:10:27.040699Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=69] type 20 to 13 when flushing.
-2025-02-24T07:10:27.040710Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=68] type 20 to 13 when flushing.
-2025-02-24T07:10:27.041269Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=67] type 20 to 13 when flushing.
-2025-02-24T07:10:27.041291Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=66] type 20 to 13 when flushing.
-2025-02-24T07:10:27.041304Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=65] type 20 to 13 when flushing.
-2025-02-24T07:10:27.041324Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=64] type 20 to 13 when flushing.
-2025-02-24T07:10:27.041917Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=95] type 20 to 13 when flushing.
-2025-02-24T07:10:27.041935Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=94] type 20 to 13 when flushing.
-2025-02-24T07:10:27.041942Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=93] type 20 to 13 when flushing.
-2025-02-24T07:10:27.041958Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=92] type 20 to 13 when flushing.
-2025-02-24T07:10:27.042616Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=91] type 20 to 13 when flushing.
-2025-02-24T07:10:27.042638Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=90] type 20 to 13 when flushing.
-2025-02-24T07:10:27.042650Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=89] type 20 to 13 when flushing.
-2025-02-24T07:10:27.042662Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=88] type 20 to 13 when flushing.
-2025-02-24T07:10:27.043921Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=87] type 20 to 13 when flushing.
-2025-02-24T07:10:27.043944Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=86] type 20 to 13 when flushing.
-2025-02-24T07:10:27.043956Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=85] type 20 to 13 when flushing.
-2025-02-24T07:10:27.043967Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=84] type 20 to 13 when flushing.
-2025-02-24T07:10:27.044584Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=83] type 20 to 13 when flushing.
-2025-02-24T07:10:27.044604Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=82] type 20 to 13 when flushing.
-2025-02-24T07:10:27.044616Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=81] type 20 to 13 when flushing.
-2025-02-24T07:10:27.044627Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=80] type 20 to 13 when flushing.
-2025-02-24T07:10:27.045182Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=111] type 20 to 13 when flushing.
-2025-02-24T07:10:27.045203Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=110] type 20 to 13 when flushing.
-2025-02-24T07:10:27.045215Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=109] type 20 to 13 when flushing.
-2025-02-24T07:10:27.045226Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=108] type 20 to 13 when flushing.
-2025-02-24T07:10:27.045829Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=107] type 20 to 13 when flushing.
-2025-02-24T07:10:27.045847Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=106] type 20 to 13 when flushing.
-2025-02-24T07:10:27.045857Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=105] type 20 to 13 when flushing.
-2025-02-24T07:10:27.045867Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=104] type 20 to 13 when flushing.
-2025-02-24T07:10:27.046552Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=103] type 20 to 13 when flushing.
-2025-02-24T07:10:27.046571Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=102] type 20 to 13 when flushing.
-2025-02-24T07:10:27.046582Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=101] type 20 to 13 when flushing.
-2025-02-24T07:10:27.046593Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=100] type 20 to 13 when flushing.
-2025-02-24T07:10:27.047893Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=99] type 20 to 13 when flushing.
-2025-02-24T07:10:27.047913Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=98] type 20 to 13 when flushing.
-2025-02-24T07:10:27.047924Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=97] type 20 to 13 when flushing.
-2025-02-24T07:10:27.047933Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=96] type 20 to 13 when flushing.
-2025-02-24T07:10:27.048532Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=127] type 20 to 13 when flushing.
-2025-02-24T07:10:27.048553Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=126] type 20 to 13 when flushing.
-2025-02-24T07:10:27.048564Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=125] type 20 to 13 when flushing.
-2025-02-24T07:10:27.048574Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=124] type 20 to 13 when flushing.
-2025-02-24T07:10:27.049202Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=123] type 20 to 13 when flushing.
-2025-02-24T07:10:27.049225Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=122] type 20 to 13 when flushing.
-2025-02-24T07:10:27.049238Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=121] type 20 to 13 when flushing.
-2025-02-24T07:10:27.049249Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=120] type 20 to 13 when flushing.
-2025-02-24T07:10:27.049891Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=119] type 20 to 13 when flushing.
-2025-02-24T07:10:27.049910Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=118] type 20 to 13 when flushing.
-2025-02-24T07:10:27.049922Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=117] type 20 to 13 when flushing.
-2025-02-24T07:10:27.049940Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=116] type 20 to 13 when flushing.
-2025-02-24T07:10:27.050567Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=115] type 20 to 13 when flushing.
-2025-02-24T07:10:27.050588Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=114] type 20 to 13 when flushing.
-2025-02-24T07:10:27.050600Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=113] type 20 to 13 when flushing.
-2025-02-24T07:10:27.050610Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=112] type 20 to 13 when flushing.
-2025-02-24T07:10:27.051785Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=143] type 20 to 13 when flushing.
-2025-02-24T07:10:27.051816Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=142] type 20 to 13 when flushing.
-2025-02-24T07:10:27.051828Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=141] type 20 to 13 when flushing.
-2025-02-24T07:10:27.051840Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=140] type 20 to 13 when flushing.
-2025-02-24T07:10:27.052468Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=139] type 20 to 13 when flushing.
-2025-02-24T07:10:27.052491Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=138] type 20 to 13 when flushing.
-2025-02-24T07:10:27.052504Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=137] type 20 to 13 when flushing.
-2025-02-24T07:10:27.052517Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=136] type 20 to 13 when flushing.
-2025-02-24T07:10:27.053090Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=135] type 20 to 13 when flushing.
-2025-02-24T07:10:27.053113Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=134] type 20 to 13 when flushing.
-2025-02-24T07:10:27.053126Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=133] type 20 to 13 when flushing.
-2025-02-24T07:10:27.053138Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=132] type 20 to 13 when flushing.
-2025-02-24T07:10:27.053782Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=131] type 20 to 13 when flushing.
-2025-02-24T07:10:27.053809Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=130] type 20 to 13 when flushing.
-2025-02-24T07:10:27.053824Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=129] type 20 to 13 when flushing.
-2025-02-24T07:10:27.053836Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=128] type 20 to 13 when flushing.
-2025-02-24T07:10:27.054515Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=159] type 20 to 13 when flushing.
-2025-02-24T07:10:27.054534Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=158] type 20 to 13 when flushing.
-2025-02-24T07:10:27.054545Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=157] type 20 to 13 when flushing.
-2025-02-24T07:10:27.054565Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=156] type 20 to 13 when flushing.
-2025-02-24T07:10:27.055845Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=155] type 20 to 13 when flushing.
-2025-02-24T07:10:27.055867Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=154] type 20 to 13 when flushing.
-2025-02-24T07:10:27.055879Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=153] type 20 to 13 when flushing.
-2025-02-24T07:10:27.055890Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=152] type 20 to 13 when flushing.
-2025-02-24T07:10:27.056491Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=151] type 20 to 13 when flushing.
-2025-02-24T07:10:27.056513Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=150] type 20 to 13 when flushing.
-2025-02-24T07:10:27.056525Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=149] type 20 to 13 when flushing.
-2025-02-24T07:10:27.056537Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=148] type 20 to 13 when flushing.
-2025-02-24T07:10:27.057209Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=147] type 20 to 13 when flushing.
-2025-02-24T07:10:27.057230Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=146] type 20 to 13 when flushing.
-2025-02-24T07:10:27.057242Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=145] type 20 to 13 when flushing.
-2025-02-24T07:10:27.057253Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=144] type 20 to 13 when flushing.
-2025-02-24T07:10:27.057809Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=175] type 20 to 13 when flushing.
-2025-02-24T07:10:27.057829Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=174] type 20 to 13 when flushing.
-2025-02-24T07:10:27.057840Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=173] type 20 to 13 when flushing.
-2025-02-24T07:10:27.057850Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=172] type 20 to 13 when flushing.
-2025-02-24T07:10:27.058396Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=171] type 20 to 13 when flushing.
-2025-02-24T07:10:27.058414Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=170] type 20 to 13 when flushing.
-2025-02-24T07:10:27.058438Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=169] type 20 to 13 when flushing.
-2025-02-24T07:10:27.058448Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=168] type 20 to 13 when flushing.
-2025-02-24T07:10:27.058996Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=167] type 20 to 13 when flushing.
-2025-02-24T07:10:27.059025Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=166] type 20 to 13 when flushing.
-2025-02-24T07:10:27.059041Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=165] type 20 to 13 when flushing.
-2025-02-24T07:10:27.059053Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=164] type 20 to 13 when flushing.
-2025-02-24T07:10:27.059621Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=163] type 20 to 13 when flushing.
-2025-02-24T07:10:27.059641Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=162] type 20 to 13 when flushing.
-2025-02-24T07:10:27.059652Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=161] type 20 to 13 when flushing.
-2025-02-24T07:10:27.059662Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=160] type 20 to 13 when flushing.
-2025-02-24T07:10:27.060246Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=191] type 20 to 13 when flushing.
-2025-02-24T07:10:27.060263Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=190] type 20 to 13 when flushing.
-2025-02-24T07:10:27.060271Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=189] type 20 to 13 when flushing.
-2025-02-24T07:10:27.060278Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=188] type 20 to 13 when flushing.
-2025-02-24T07:10:27.060872Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=187] type 20 to 13 when flushing.
-2025-02-24T07:10:27.060892Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=186] type 20 to 13 when flushing.
-2025-02-24T07:10:27.060903Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=185] type 20 to 13 when flushing.
-2025-02-24T07:10:27.060913Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=184] type 20 to 13 when flushing.
-2025-02-24T07:10:27.061698Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=183] type 20 to 13 when flushing.
-2025-02-24T07:10:27.061718Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=182] type 20 to 13 when flushing.
-2025-02-24T07:10:27.061729Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=181] type 20 to 13 when flushing.
-2025-02-24T07:10:27.061739Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=180] type 20 to 13 when flushing.
-2025-02-24T07:10:27.062375Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=179] type 20 to 13 when flushing.
-2025-02-24T07:10:27.062399Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=178] type 20 to 13 when flushing.
-2025-02-24T07:10:27.062411Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=177] type 20 to 13 when flushing.
-2025-02-24T07:10:27.062453Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=176] type 20 to 13 when flushing.
-2025-02-24T07:10:27.069882Z 1 [Note] [MY-011924] [InnoDB] Legacy atomic write buffer created
-2025-02-24T07:10:27.069918Z 1 [Note] [MY-012923] [InnoDB] Creating shared tablespace for temporary tables
-2025-02-24T07:10:27.070916Z 1 [Note] [MY-012265] [InnoDB] Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
-2025-02-24T07:10:27.148118Z 1 [Note] [MY-012266] [InnoDB] File './ibtmp1' size is now 12 MB.
-2025-02-24T07:10:27.177308Z 1 [Note] [MY-013018] [InnoDB] Created 128 and tracked 128 new rollback segment(s) in the temporary tablespace. 128 are now active.
-2025-02-24T07:10:27.181993Z 1 [Note] [MY-013018] [InnoDB] Created 128 and tracked 128 new rollback segment(s) in undo tablespace number 1. 128 are now active.
-2025-02-24T07:10:27.185674Z 1 [Note] [MY-013018] [InnoDB] Created 128 and tracked 128 new rollback segment(s) in undo tablespace number 2. 128 are now active.
-2025-02-24T07:10:27.269615Z 1 [Note] [MY-012976] [InnoDB] 8.0.41 started; log sequence number 2399391
-2025-02-24T07:10:27.275062Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-2025-02-24T07:10:27.276431Z 1 [Note] [MY-011088] [Server] Data dictionary initializing version '80023'.
-2025-02-24T07:10:27.529605Z 1 [Note] [MY-010007] [Server] Installed data dictionary with version 80023
-2025-02-24T07:10:27.644197Z 2 [Note] [MY-011019] [Server] Created system views with I_S version 80023.
-2025-02-24T07:10:27.998947Z 0 [Note] [MY-013911] [Server] Crash recovery finished in InnoDB engine. No attempts to commit, rollback or prepare any transactions.
-2025-02-24T07:10:28.006139Z 0 [Note] [MY-012487] [InnoDB] DDL log recovery : begin
-2025-02-24T07:10:28.006173Z 0 [Note] [MY-012488] [InnoDB] DDL log recovery : end
-2025-02-24T07:10:28.008018Z 0 [Note] [MY-012922] [InnoDB] Waiting for purge to start
-2025-02-24T07:10:28.061478Z 0 [Note] [MY-010913] [Server] You have not provided a mandatory server-id. Servers in a replication topology must have unique server-ids. Please refer to the proper server start-up parameters documentation.
-2025-02-24T07:10:28.155190Z 0 [Note] [MY-010305] [Server] Auto generated SSL certificates are placed in data directory.
-2025-02-24T07:10:28.275171Z 0 [Note] [MY-010309] [Server] Auto generated RSA key files through --sha256_password_auto_generate_rsa_keys are placed in data directory.
-2025-02-24T07:10:28.275828Z 0 [Note] [MY-010308] [Server] Skipping generation of RSA key pair through --caching_sha2_password_auto_generate_rsa_keys as key files are present in data directory.
-2025-02-24T07:10:28.277193Z 6 [Note] [MY-011061] [Server] Creating the system database.
-2025-02-24T07:10:28.277225Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
-2025-02-24T07:10:28.277317Z 6 [Note] [MY-011061] [Server] Creating the system tables.
-2025-02-24T07:10:28.452198Z 6 [Note] [MY-011061] [Server] Filling in the system tables, part 1.
-2025-02-24T07:10:28.467030Z 6 [Note] [MY-011061] [Server] Filling in the system tables, part 2.
-2025-02-24T07:10:28.842713Z 6 [Note] [MY-011061] [Server] Filling in the mysql.help table.
-2025-02-24T07:10:28.977330Z 6 [Note] [MY-011061] [Server] Creating the system users for internal usage.
-2025-02-24T07:10:29.000375Z 6 [Note] [MY-011061] [Server] Creating the sys schema.
-2025-02-24T07:10:29.430439Z 6 [Note] [MY-010456] [Server] Bootstrapping complete
-2025-02-24T07:10:29.456113Z 0 [Note] [MY-010067] [Server] Giving 0 client threads a chance to die gracefully
-2025-02-24T07:10:29.456151Z 0 [Note] [MY-010117] [Server] Shutting down replica threads
-2025-02-24T07:10:29.456161Z 0 [Note] [MY-010118] [Server] Forcefully disconnecting 0 remaining clients
-2025-02-24T07:10:29.457440Z 0 [Note] [MY-012330] [InnoDB] FTS optimize thread exiting.
-2025-02-24T07:10:29.465411Z 0 [Note] [MY-013072] [InnoDB] Starting shutdown...
-2025-02-24T07:10:29.466064Z 0 [Note] [MY-011944] [InnoDB] Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
-2025-02-24T07:10:29.466466Z 0 [Note] [MY-011944] [InnoDB] Buffer pool(s) dump completed at 250224  7:10:29
-2025-02-24T07:10:29.947080Z 0 [Note] [MY-013084] [InnoDB] Log background threads are being closed...
-2025-02-24T07:10:30.464589Z 0 [Note] [MY-013854] [InnoDB] Bytes written to disk by DBLWR (ON): 33734656
-2025-02-24T07:10:30.464818Z 0 [Note] [MY-012980] [InnoDB] Shutdown completed; log sequence number 18912720
-2025-02-24T07:10:30.468506Z 0 [Note] [MY-012255] [InnoDB] Removed temporary tablespace data file: "ibtmp1"
-Data directory initialization took: 3.717403 seconds.
+2025-02-24T08:09:23.688687Z 0 [Note] [MY-013667] [Server] Error-log destination "stderr" is not a file. Can not restore error log messages from previous run.
+2025-02-24T08:09:23.686741Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+2025-02-24T08:09:23.686824Z 0 [Note] [MY-010096] [Server] Ignoring --secure-file-priv value as server is running with --initialize(-insecure).
+2025-02-24T08:09:23.686853Z 0 [Note] [MY-013932] [Server] BuildID[sha1]=2c9f422dd83c2b8b3c8b15d4bf5a04af471c1289
+2025-02-24T08:09:23.686855Z 0 [Note] [MY-010949] [Server] Basedir set to /usr/.
+2025-02-24T08:09:23.686864Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.41) initializing of server in progress as process 9
+2025-02-24T08:09:23.688268Z 0 [Note] [MY-010458] [Server] --initialize specified on an existing data directory.
+2025-02-24T08:09:23.688659Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2025-02-24T08:09:23.689767Z 0 [Note] [MY-010938] [Server] Generating a new UUID: a86af930-f286-11ef-aba4-0242ac110002.
+2025-02-24T08:09:23.692278Z 0 [Note] [MY-012366] [InnoDB] Using Linux native AIO
+2025-02-24T08:09:23.692401Z 0 [Note] [MY-010747] [Server] Plugin 'FEDERATED' is disabled.
+2025-02-24T08:09:23.692486Z 0 [Note] [MY-010747] [Server] Plugin 'ndbcluster' is disabled.
+2025-02-24T08:09:23.692517Z 0 [Note] [MY-010747] [Server] Plugin 'ndbinfo' is disabled.
+2025-02-24T08:09:23.692526Z 0 [Note] [MY-010747] [Server] Plugin 'ndb_transid_mysql_connection_map' is disabled.
+2025-02-24T08:09:23.693793Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-02-24T08:09:23.693859Z 1 [Note] [MY-013546] [InnoDB] Atomic write enabled
+2025-02-24T08:09:23.693911Z 1 [Note] [MY-012274] [InnoDB] The first innodb_system data file 'ibdata1' did not exist. A new tablespace will be created!
+2025-02-24T08:09:23.693939Z 1 [Note] [MY-012932] [InnoDB] PUNCH HOLE support available
+2025-02-24T08:09:23.694011Z 1 [Note] [MY-012944] [InnoDB] Uses event mutexes
+2025-02-24T08:09:23.694056Z 1 [Note] [MY-012945] [InnoDB] GCC builtin __atomic_thread_fence() is used for memory barrier
+2025-02-24T08:09:23.694067Z 1 [Note] [MY-012948] [InnoDB] Compressed tables use zlib 1.3.1
+2025-02-24T08:09:23.695927Z 1 [Note] [MY-012951] [InnoDB] Using hardware accelerated crc32 and polynomial multiplication.
+2025-02-24T08:09:23.696693Z 1 [Note] [MY-012203] [InnoDB] Directories to scan './'
+2025-02-24T08:09:23.696769Z 1 [Note] [MY-012204] [InnoDB] Scanning './'
+2025-02-24T08:09:23.696864Z 1 [Note] [MY-012208] [InnoDB] Completed space ID check of 0 files.
+2025-02-24T08:09:23.697679Z 1 [Note] [MY-012955] [InnoDB] Initializing buffer pool, total size = 128.000000M, instances = 1, chunk size =128.000000M 
+2025-02-24T08:09:23.704686Z 1 [Note] [MY-012957] [InnoDB] Completed initialization of buffer pool
+2025-02-24T08:09:23.707184Z 0 [Note] [MY-011952] [InnoDB] If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2025-02-24T08:09:23.708641Z 1 [Note] [MY-012265] [InnoDB] Setting file './ibdata1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-02-24T08:09:23.743702Z 1 [Note] [MY-012266] [InnoDB] File './ibdata1' size is now 12 MB.
+2025-02-24T08:09:23.743820Z 1 [Note] [MY-013566] [InnoDB] Double write buffer files: 2
+2025-02-24T08:09:23.743837Z 1 [Note] [MY-013565] [InnoDB] Double write buffer pages per instance: 4
+2025-02-24T08:09:23.745199Z 1 [Note] [MY-013532] [InnoDB] Using './#ib_16384_0.dblwr' for doublewrite
+2025-02-24T08:09:23.746853Z 1 [Note] [MY-013532] [InnoDB] Using './#ib_16384_1.dblwr' for doublewrite
+2025-02-24T08:09:23.782242Z 1 [Note] [MY-012893] [InnoDB] New redo log files created, LSN=8204
+2025-02-24T08:09:23.782434Z 1 [Note] [MY-013083] [InnoDB] Log background threads are being started...
+2025-02-24T08:09:23.787779Z 1 [Note] [MY-012896] [InnoDB] Creating UNDO Tablespace ./undo_001
+2025-02-24T08:09:23.787798Z 1 [Note] [MY-012897] [InnoDB] Setting file ./undo_001 size to 16 MB
+2025-02-24T08:09:23.787812Z 1 [Note] [MY-012898] [InnoDB] Physically writing the file full
+2025-02-24T08:09:23.840126Z 1 [Note] [MY-012896] [InnoDB] Creating UNDO Tablespace ./undo_002
+2025-02-24T08:09:23.840156Z 1 [Note] [MY-012897] [InnoDB] Setting file ./undo_002 size to 16 MB
+2025-02-24T08:09:23.840162Z 1 [Note] [MY-012898] [InnoDB] Physically writing the file full
+2025-02-24T08:09:23.898141Z 1 [Note] [MY-012915] [InnoDB] Created 2 undo tablespaces.
+2025-02-24T08:09:23.898696Z 1 [Note] [MY-011980] [InnoDB] GTID recovery trx_no: 0
+2025-02-24T08:09:23.899094Z 1 [Note] [MY-013776] [InnoDB] Parallel initialization of rseg complete
+2025-02-24T08:09:23.899119Z 1 [Note] [MY-013777] [InnoDB] Time taken to initialize rseg using 4 thread: 427 ms.
+2025-02-24T08:09:23.899366Z 1 [Note] [MY-011920] [InnoDB] Legacy doublewrite buffer not found: creating new
+2025-02-24T08:09:23.909412Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=24] type 20 to 13 when flushing.
+2025-02-24T08:09:23.909450Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=23] type 20 to 13 when flushing.
+2025-02-24T08:09:23.909459Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=22] type 20 to 13 when flushing.
+2025-02-24T08:09:23.909468Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=21] type 20 to 13 when flushing.
+2025-02-24T08:09:23.911148Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=20] type 20 to 13 when flushing.
+2025-02-24T08:09:23.911167Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=19] type 20 to 13 when flushing.
+2025-02-24T08:09:23.911174Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=18] type 20 to 13 when flushing.
+2025-02-24T08:09:23.911184Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=17] type 20 to 13 when flushing.
+2025-02-24T08:09:23.912867Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=16] type 20 to 13 when flushing.
+2025-02-24T08:09:23.912889Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=15] type 20 to 13 when flushing.
+2025-02-24T08:09:23.912899Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=14] type 20 to 13 when flushing.
+2025-02-24T08:09:23.912907Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=13] type 20 to 13 when flushing.
+2025-02-24T08:09:23.913518Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=12] type 20 to 13 when flushing.
+2025-02-24T08:09:23.913538Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=11] type 20 to 13 when flushing.
+2025-02-24T08:09:23.913545Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=10] type 20 to 13 when flushing.
+2025-02-24T08:09:23.913553Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=9] type 20 to 13 when flushing.
+2025-02-24T08:09:23.914348Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=40] type 20 to 13 when flushing.
+2025-02-24T08:09:23.914367Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=39] type 20 to 13 when flushing.
+2025-02-24T08:09:23.914375Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=38] type 20 to 13 when flushing.
+2025-02-24T08:09:23.914385Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=37] type 20 to 13 when flushing.
+2025-02-24T08:09:23.916007Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=36] type 20 to 13 when flushing.
+2025-02-24T08:09:23.916029Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=35] type 20 to 13 when flushing.
+2025-02-24T08:09:23.916037Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=34] type 20 to 13 when flushing.
+2025-02-24T08:09:23.916054Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=33] type 20 to 13 when flushing.
+2025-02-24T08:09:23.916860Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=32] type 20 to 13 when flushing.
+2025-02-24T08:09:23.916881Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=31] type 20 to 13 when flushing.
+2025-02-24T08:09:23.916892Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=30] type 20 to 13 when flushing.
+2025-02-24T08:09:23.916903Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=29] type 20 to 13 when flushing.
+2025-02-24T08:09:23.917562Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=28] type 20 to 13 when flushing.
+2025-02-24T08:09:23.917583Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=27] type 20 to 13 when flushing.
+2025-02-24T08:09:23.917594Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=26] type 20 to 13 when flushing.
+2025-02-24T08:09:23.917605Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=25] type 20 to 13 when flushing.
+2025-02-24T08:09:23.918292Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=79] type 20 to 13 when flushing.
+2025-02-24T08:09:23.918314Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=78] type 20 to 13 when flushing.
+2025-02-24T08:09:23.918326Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=77] type 20 to 13 when flushing.
+2025-02-24T08:09:23.918337Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=76] type 20 to 13 when flushing.
+2025-02-24T08:09:23.920078Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=75] type 20 to 13 when flushing.
+2025-02-24T08:09:23.920103Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=74] type 20 to 13 when flushing.
+2025-02-24T08:09:23.920114Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=73] type 20 to 13 when flushing.
+2025-02-24T08:09:23.920125Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=72] type 20 to 13 when flushing.
+2025-02-24T08:09:23.920769Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=71] type 20 to 13 when flushing.
+2025-02-24T08:09:23.920788Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=70] type 20 to 13 when flushing.
+2025-02-24T08:09:23.920797Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=69] type 20 to 13 when flushing.
+2025-02-24T08:09:23.920804Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=68] type 20 to 13 when flushing.
+2025-02-24T08:09:23.922949Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=67] type 20 to 13 when flushing.
+2025-02-24T08:09:23.922972Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=66] type 20 to 13 when flushing.
+2025-02-24T08:09:23.922984Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=65] type 20 to 13 when flushing.
+2025-02-24T08:09:23.922995Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=64] type 20 to 13 when flushing.
+2025-02-24T08:09:23.925315Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=95] type 20 to 13 when flushing.
+2025-02-24T08:09:23.925339Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=94] type 20 to 13 when flushing.
+2025-02-24T08:09:23.925352Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=93] type 20 to 13 when flushing.
+2025-02-24T08:09:23.925371Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=92] type 20 to 13 when flushing.
+2025-02-24T08:09:23.926098Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=91] type 20 to 13 when flushing.
+2025-02-24T08:09:23.926130Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=90] type 20 to 13 when flushing.
+2025-02-24T08:09:23.926142Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=89] type 20 to 13 when flushing.
+2025-02-24T08:09:23.926153Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=88] type 20 to 13 when flushing.
+2025-02-24T08:09:23.926837Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=87] type 20 to 13 when flushing.
+2025-02-24T08:09:23.926855Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=86] type 20 to 13 when flushing.
+2025-02-24T08:09:23.926866Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=85] type 20 to 13 when flushing.
+2025-02-24T08:09:23.926876Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=84] type 20 to 13 when flushing.
+2025-02-24T08:09:23.928620Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=83] type 20 to 13 when flushing.
+2025-02-24T08:09:23.928667Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=82] type 20 to 13 when flushing.
+2025-02-24T08:09:23.928685Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=81] type 20 to 13 when flushing.
+2025-02-24T08:09:23.928705Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=80] type 20 to 13 when flushing.
+2025-02-24T08:09:23.929358Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=111] type 20 to 13 when flushing.
+2025-02-24T08:09:23.929384Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=110] type 20 to 13 when flushing.
+2025-02-24T08:09:23.929398Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=109] type 20 to 13 when flushing.
+2025-02-24T08:09:23.929407Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=108] type 20 to 13 when flushing.
+2025-02-24T08:09:23.930048Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=107] type 20 to 13 when flushing.
+2025-02-24T08:09:23.930071Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=106] type 20 to 13 when flushing.
+2025-02-24T08:09:23.930084Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=105] type 20 to 13 when flushing.
+2025-02-24T08:09:23.930096Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=104] type 20 to 13 when flushing.
+2025-02-24T08:09:23.930840Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=103] type 20 to 13 when flushing.
+2025-02-24T08:09:23.930859Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=102] type 20 to 13 when flushing.
+2025-02-24T08:09:23.930866Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=101] type 20 to 13 when flushing.
+2025-02-24T08:09:23.930873Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=100] type 20 to 13 when flushing.
+2025-02-24T08:09:23.932627Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=99] type 20 to 13 when flushing.
+2025-02-24T08:09:23.932647Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=98] type 20 to 13 when flushing.
+2025-02-24T08:09:23.932654Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=97] type 20 to 13 when flushing.
+2025-02-24T08:09:23.932664Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=96] type 20 to 13 when flushing.
+2025-02-24T08:09:23.933373Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=127] type 20 to 13 when flushing.
+2025-02-24T08:09:23.933395Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=126] type 20 to 13 when flushing.
+2025-02-24T08:09:23.933406Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=125] type 20 to 13 when flushing.
+2025-02-24T08:09:23.933418Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=124] type 20 to 13 when flushing.
+2025-02-24T08:09:23.934076Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=123] type 20 to 13 when flushing.
+2025-02-24T08:09:23.934096Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=122] type 20 to 13 when flushing.
+2025-02-24T08:09:23.934108Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=121] type 20 to 13 when flushing.
+2025-02-24T08:09:23.934118Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=120] type 20 to 13 when flushing.
+2025-02-24T08:09:23.934886Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=119] type 20 to 13 when flushing.
+2025-02-24T08:09:23.934909Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=118] type 20 to 13 when flushing.
+2025-02-24T08:09:23.934920Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=117] type 20 to 13 when flushing.
+2025-02-24T08:09:23.934929Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=116] type 20 to 13 when flushing.
+2025-02-24T08:09:23.936631Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=115] type 20 to 13 when flushing.
+2025-02-24T08:09:23.936670Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=114] type 20 to 13 when flushing.
+2025-02-24T08:09:23.936685Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=113] type 20 to 13 when flushing.
+2025-02-24T08:09:23.936696Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=112] type 20 to 13 when flushing.
+2025-02-24T08:09:23.937403Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=143] type 20 to 13 when flushing.
+2025-02-24T08:09:23.937427Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=142] type 20 to 13 when flushing.
+2025-02-24T08:09:23.937438Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=141] type 20 to 13 when flushing.
+2025-02-24T08:09:23.937448Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=140] type 20 to 13 when flushing.
+2025-02-24T08:09:23.938217Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=139] type 20 to 13 when flushing.
+2025-02-24T08:09:23.938239Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=138] type 20 to 13 when flushing.
+2025-02-24T08:09:23.938250Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=137] type 20 to 13 when flushing.
+2025-02-24T08:09:23.938260Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=136] type 20 to 13 when flushing.
+2025-02-24T08:09:23.938923Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=135] type 20 to 13 when flushing.
+2025-02-24T08:09:23.938947Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=134] type 20 to 13 when flushing.
+2025-02-24T08:09:23.938958Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=133] type 20 to 13 when flushing.
+2025-02-24T08:09:23.938969Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=132] type 20 to 13 when flushing.
+2025-02-24T08:09:23.940597Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=131] type 20 to 13 when flushing.
+2025-02-24T08:09:23.940620Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=130] type 20 to 13 when flushing.
+2025-02-24T08:09:23.940629Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=129] type 20 to 13 when flushing.
+2025-02-24T08:09:23.940641Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=128] type 20 to 13 when flushing.
+2025-02-24T08:09:23.941403Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=159] type 20 to 13 when flushing.
+2025-02-24T08:09:23.941422Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=158] type 20 to 13 when flushing.
+2025-02-24T08:09:23.941434Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=157] type 20 to 13 when flushing.
+2025-02-24T08:09:23.941444Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=156] type 20 to 13 when flushing.
+2025-02-24T08:09:23.942152Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=155] type 20 to 13 when flushing.
+2025-02-24T08:09:23.942173Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=154] type 20 to 13 when flushing.
+2025-02-24T08:09:23.942185Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=153] type 20 to 13 when flushing.
+2025-02-24T08:09:23.942196Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=152] type 20 to 13 when flushing.
+2025-02-24T08:09:23.942816Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=151] type 20 to 13 when flushing.
+2025-02-24T08:09:23.942838Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=150] type 20 to 13 when flushing.
+2025-02-24T08:09:23.942850Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=149] type 20 to 13 when flushing.
+2025-02-24T08:09:23.942861Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=148] type 20 to 13 when flushing.
+2025-02-24T08:09:23.944511Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=147] type 20 to 13 when flushing.
+2025-02-24T08:09:23.944533Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=146] type 20 to 13 when flushing.
+2025-02-24T08:09:23.944546Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=145] type 20 to 13 when flushing.
+2025-02-24T08:09:23.944558Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=144] type 20 to 13 when flushing.
+2025-02-24T08:09:23.945219Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=175] type 20 to 13 when flushing.
+2025-02-24T08:09:23.945243Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=174] type 20 to 13 when flushing.
+2025-02-24T08:09:23.945254Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=173] type 20 to 13 when flushing.
+2025-02-24T08:09:23.945265Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=172] type 20 to 13 when flushing.
+2025-02-24T08:09:23.945869Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=171] type 20 to 13 when flushing.
+2025-02-24T08:09:23.945890Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=170] type 20 to 13 when flushing.
+2025-02-24T08:09:23.945900Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=169] type 20 to 13 when flushing.
+2025-02-24T08:09:23.945910Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=168] type 20 to 13 when flushing.
+2025-02-24T08:09:23.946576Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=167] type 20 to 13 when flushing.
+2025-02-24T08:09:23.946605Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=166] type 20 to 13 when flushing.
+2025-02-24T08:09:23.946616Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=165] type 20 to 13 when flushing.
+2025-02-24T08:09:23.946626Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=164] type 20 to 13 when flushing.
+2025-02-24T08:09:23.947850Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=163] type 20 to 13 when flushing.
+2025-02-24T08:09:23.947876Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=162] type 20 to 13 when flushing.
+2025-02-24T08:09:23.947889Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=161] type 20 to 13 when flushing.
+2025-02-24T08:09:23.947901Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=160] type 20 to 13 when flushing.
+2025-02-24T08:09:23.948668Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=191] type 20 to 13 when flushing.
+2025-02-24T08:09:23.948691Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=190] type 20 to 13 when flushing.
+2025-02-24T08:09:23.948702Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=189] type 20 to 13 when flushing.
+2025-02-24T08:09:23.948713Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=188] type 20 to 13 when flushing.
+2025-02-24T08:09:23.949319Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=187] type 20 to 13 when flushing.
+2025-02-24T08:09:23.949340Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=186] type 20 to 13 when flushing.
+2025-02-24T08:09:23.949350Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=185] type 20 to 13 when flushing.
+2025-02-24T08:09:23.949360Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=184] type 20 to 13 when flushing.
+2025-02-24T08:09:23.950058Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=183] type 20 to 13 when flushing.
+2025-02-24T08:09:23.950075Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=182] type 20 to 13 when flushing.
+2025-02-24T08:09:23.950085Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=181] type 20 to 13 when flushing.
+2025-02-24T08:09:23.950095Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=180] type 20 to 13 when flushing.
+2025-02-24T08:09:23.950735Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=179] type 20 to 13 when flushing.
+2025-02-24T08:09:23.950754Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=178] type 20 to 13 when flushing.
+2025-02-24T08:09:23.950765Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=177] type 20 to 13 when flushing.
+2025-02-24T08:09:23.950775Z 0 [Note] [MY-011950] [InnoDB] Resetting invalid page [page id: space=0, page number=176] type 20 to 13 when flushing.
+2025-02-24T08:09:23.965649Z 1 [Note] [MY-011924] [InnoDB] Legacy atomic write buffer created
+2025-02-24T08:09:23.965679Z 1 [Note] [MY-012923] [InnoDB] Creating shared tablespace for temporary tables
+2025-02-24T08:09:23.966851Z 1 [Note] [MY-012265] [InnoDB] Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-02-24T08:09:24.029488Z 1 [Note] [MY-012266] [InnoDB] File './ibtmp1' size is now 12 MB.
+2025-02-24T08:09:24.060766Z 1 [Note] [MY-013018] [InnoDB] Created 128 and tracked 128 new rollback segment(s) in the temporary tablespace. 128 are now active.
+2025-02-24T08:09:24.063583Z 1 [Note] [MY-013018] [InnoDB] Created 128 and tracked 128 new rollback segment(s) in undo tablespace number 1. 128 are now active.
+2025-02-24T08:09:24.066396Z 1 [Note] [MY-013018] [InnoDB] Created 128 and tracked 128 new rollback segment(s) in undo tablespace number 2. 128 are now active.
+2025-02-24T08:09:24.163471Z 1 [Note] [MY-012976] [InnoDB] 8.0.41 started; log sequence number 2399391
+2025-02-24T08:09:24.169658Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2025-02-24T08:09:24.170874Z 1 [Note] [MY-011088] [Server] Data dictionary initializing version '80023'.
+2025-02-24T08:09:24.424900Z 1 [Note] [MY-010007] [Server] Installed data dictionary with version 80023
+2025-02-24T08:09:24.520675Z 2 [Note] [MY-011019] [Server] Created system views with I_S version 80023.
+2025-02-24T08:09:24.871204Z 0 [Note] [MY-013911] [Server] Crash recovery finished in InnoDB engine. No attempts to commit, rollback or prepare any transactions.
+2025-02-24T08:09:24.878786Z 0 [Note] [MY-012487] [InnoDB] DDL log recovery : begin
+2025-02-24T08:09:24.878824Z 0 [Note] [MY-012488] [InnoDB] DDL log recovery : end
+2025-02-24T08:09:24.880459Z 0 [Note] [MY-012922] [InnoDB] Waiting for purge to start
+2025-02-24T08:09:24.933522Z 0 [Note] [MY-010913] [Server] You have not provided a mandatory server-id. Servers in a replication topology must have unique server-ids. Please refer to the proper server start-up parameters documentation.
+2025-02-24T08:09:25.195802Z 0 [Note] [MY-010305] [Server] Auto generated SSL certificates are placed in data directory.
+2025-02-24T08:09:25.223984Z 0 [Note] [MY-010309] [Server] Auto generated RSA key files through --sha256_password_auto_generate_rsa_keys are placed in data directory.
+2025-02-24T08:09:25.224498Z 0 [Note] [MY-010308] [Server] Skipping generation of RSA key pair through --caching_sha2_password_auto_generate_rsa_keys as key files are present in data directory.
+2025-02-24T08:09:25.225965Z 6 [Note] [MY-011061] [Server] Creating the system database.
+2025-02-24T08:09:25.225999Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2025-02-24T08:09:25.226076Z 6 [Note] [MY-011061] [Server] Creating the system tables.
+2025-02-24T08:09:25.375236Z 6 [Note] [MY-011061] [Server] Filling in the system tables, part 1.
+2025-02-24T08:09:25.383940Z 6 [Note] [MY-011061] [Server] Filling in the system tables, part 2.
+2025-02-24T08:09:25.667497Z 6 [Note] [MY-011061] [Server] Filling in the mysql.help table.
+2025-02-24T08:09:25.780957Z 6 [Note] [MY-011061] [Server] Creating the system users for internal usage.
+2025-02-24T08:09:25.783443Z 6 [Note] [MY-011061] [Server] Creating the sys schema.
+2025-02-24T08:09:26.212533Z 6 [Note] [MY-010456] [Server] Bootstrapping complete
+2025-02-24T08:09:26.240332Z 0 [Note] [MY-010067] [Server] Giving 0 client threads a chance to die gracefully
+2025-02-24T08:09:26.240372Z 0 [Note] [MY-010117] [Server] Shutting down replica threads
+2025-02-24T08:09:26.240380Z 0 [Note] [MY-010118] [Server] Forcefully disconnecting 0 remaining clients
+2025-02-24T08:09:26.241646Z 0 [Note] [MY-012330] [InnoDB] FTS optimize thread exiting.
+2025-02-24T08:09:26.363068Z 0 [Note] [MY-013072] [InnoDB] Starting shutdown...
+2025-02-24T08:09:26.365567Z 0 [Note] [MY-011944] [InnoDB] Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2025-02-24T08:09:26.365943Z 0 [Note] [MY-011944] [InnoDB] Buffer pool(s) dump completed at 250224  8:09:26
+2025-02-24T08:09:27.080212Z 0 [Note] [MY-013084] [InnoDB] Log background threads are being closed...
+2025-02-24T08:09:27.598537Z 0 [Note] [MY-013854] [InnoDB] Bytes written to disk by DBLWR (ON): 33800192
+2025-02-24T08:09:27.598782Z 0 [Note] [MY-012980] [InnoDB] Shutdown completed; log sequence number 18897390
+2025-02-24T08:09:27.602909Z 0 [Note] [MY-012255] [InnoDB] Removed temporary tablespace data file: "ibtmp1"
+Data directory initialization took: 3.971999 seconds.
 ========== STEP 2: MySQL Server Startup ==========
 Starting MySQL server...
-MySQL server startup took: 0.513324 seconds.
+MySQL server startup took: 0.613879 seconds.
 ========== STEP 3: Dump Restoration ==========
-Dump restoration took: 0.137920 seconds.
+Dump restoration took: 0.127725 seconds.
 ========== STEP 4: Query Execution ==========
 name
 Hercules Inc.
@@ -762,7 +762,7 @@ Stanley Works
 XO Communications Inc
 The McGraw-Hill Companies Inc.
 Cadence Design Systems, Inc.
-Query execution took: 0.013138 seconds.
+Query execution took: 0.012613 seconds.
 ========== STEP 5: Cleanup ==========
 Benchmarking (DB Performance) Completed.
-Results: ddi_t=3.717403, ss_t=0.513324, dr_t=0.137920, qe_t=0.013138
+Results: ddi_t=3.971999, ss_t=0.613879, dr_t=0.127725, qe_t=0.012613
